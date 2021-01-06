@@ -1,0 +1,26 @@
+{
+  "name": "auto-restarter",
+  "version": "1.0.0",
+  "description": "An auto restarter program for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "auto-restarter": "./bin/auto-restarter.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauthier-th/auto-restarter.git"
+  },
+  "author": "gauthier-th",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauthier-th/auto-restarter/issues"
+  },
+  "homepage": "https://github.com/gauthier-th/auto-restarter#readme",
+  "dependencies": {
+    "ansi-styles": "^5.0.0"
+  }
+}
