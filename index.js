@@ -5,7 +5,10 @@ const asyncFork = (file) => {
 	return new Promise((resolve, reject) => {
 		const fileFork = fork(file, [], {
 			silent: true,
-			env: { NPM_CONFIG_COLOR: 'always' },
+			env: {
+				...process.env,
+				NPM_CONFIG_COLOR: 'always'
+			},
 			stdio: 'inherit'
 		});
 		fileFork.on('exit', (code) => {
